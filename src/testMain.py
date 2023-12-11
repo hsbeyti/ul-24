@@ -16,6 +16,9 @@ def prepareData(filename, outputFilename):
     csv_writer = csv.writer(output['data'])
     for row in csv_reader:
         if row[0] == '1':
+            my_empty_list.append("#######################")
+            csv_writer.writerow(my_empty_list)
+            my_empty_list.clear()
             continue
         
         if row[0] == '#':
