@@ -20,10 +20,11 @@ class CommonFunctions:
          #self.bva_gitlab_token = os.getenv("BVA_GITLAB_TOKEN")
          #self.user_name= os.getenv("USER_NAME")
          #self.password= os.getenv("USER_PW")
-         self.relative_path = os.getenv("RELATIVE_PATH")
-         self.config_path = relative_env_path + os.getenv("CONFIG_PATH")
-         self.output_path = relative_env_path + os.getenv("OUTPUT_PATH")
-         self.config_file_name = os.getenv("CONFIG_FILE_NAME")
+         #print (os.getenv("RELATIVE_PATH"))
+         #self.relative_path = os.getenv("RELATIVE_PATH")
+         #self.config_path = relative_env_path + os.getenv("CONFIG_PATH")
+         #self.output_path = relative_env_path + os.getenv("OUTPUT_PATH")
+         #self.config_file_name = os.getenv("CONFIG_FILE_NAME")
 
        #---------------------------------------
        def returnTheseData(self, success, message, data):
