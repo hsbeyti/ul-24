@@ -1,4 +1,3 @@
-
 import json
 import csv
 import sys
@@ -11,7 +10,7 @@ from openpyxl.workbook import Workbook
 
 # is a super(parent) class for all other Classes
 class CommonFunctions:
-       env_path = "env/.env"
+       env_path = "./env/.env"
         # relative_env_path = "../../"
        def __init__(self,relative_env_path):
 
