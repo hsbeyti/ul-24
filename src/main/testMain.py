@@ -22,7 +22,7 @@ def process_csv(input_file, output_file):
                 # Check for the delimiter '#' indicating a new set of rows
                 if row[0] == '#':
                     writer.writerow("########################")
-                elif row[2] == '1':
+                elif row[2] == '1' and row[0] != '1':
                     patterns = row[4:]
                     patterns_sum = sum(1 for val in patterns if val=='1')
                     # Write API name and sum of patterns to the output file
